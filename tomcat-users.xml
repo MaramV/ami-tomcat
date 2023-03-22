@@ -1,0 +1,8 @@
+<tomcat-users>
+<!--
+    Comments
+-->
+   <role rolename="admin-gui"/>
+   <role rolename="manager-gui"/>
+   <user username="admin" password="TomcatAdminP@ssw0rd" fullName="Administrator" roles="admin-gui,manager-gui"/>
+</tomcat-users>

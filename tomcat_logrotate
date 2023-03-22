@@ -1,0 +1,24 @@
+compress
+compresscmd /bin/gzip
+compressoptions -9
+compressext .gz
+
+dateext
+dateformat -%Y-%m-%d-%s
+
+nomail
+
+/usr/share/tomcat/logs/catalina.out
+{
+    copytruncate
+    daily
+    rotate 7
+    compress
+    missingok
+    size 100M
+    create 0644 tomcat tomcat
+
+    lastaction
+    /usr/share/logrotate/postrotate.sh > /usr/share/logrotate/postrotate.txt 2>&1
+    endscript
+}

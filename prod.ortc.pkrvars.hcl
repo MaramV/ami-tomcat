@@ -1,0 +1,9 @@
+role_arn        = "arn:aws:iam::667975846098:role/Jelecos_Admin"
+vpc_tag_name    = "ecom-prodA-vpc" // vpc on prod
+subnet_tag_name = "gwlb-prodA-sn-a" // subnet on prod
+s3_bucket        = "667975846098-ec2-resources"
+ssh_user        = "ec2-user"
+ssh_keyfile    = "~/Documents/keys/otc-prod-key-west-2.pem" // local location of key
+ec2_type       = "t3a.small"
+region         = "us-west-2"
+tomcat_version = "9.0.59"
